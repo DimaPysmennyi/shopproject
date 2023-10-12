@@ -1,0 +1,24 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="{% static 'main_page/css/style.css' %}">
+</head>
+<body>
+    {% block header %}
+    {% endblock %}
+    <h1>
+        Головна сторінка
+    </h1>
+    <p>Це магазин техніки, тут ви можете придбати найкращі гаджети</p>
+    
+    <div>
+        <img src="https://images.samsung.com/is/image/samsung/p6pim/de/feature/163953138/de-feature--thinsp--531465333?$FB_TYPE_A_MO_JPG$" alt="">
+        <p>
+            Новинка!
+        </p>
+    </div>
+</body>
+</html>
