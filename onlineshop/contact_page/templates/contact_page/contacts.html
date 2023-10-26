@@ -1,3 +1,4 @@
+{% extends 'APP_settings/settings.html' %}
 {% load static %}
 <html lang="en">
 <head>
@@ -7,18 +8,47 @@
     <link rel="stylesheet" href="{% static 'contact_page/css/style.css' %}">
 </head>
 <body>
-    <h1>Контакти</h1>
-    <p>
-        <label class="headline">Телефон:</label>
-        +380123456789
-    </p>
-    <p>
-        <label class="headline">Адреса: </label>
-        <a href="https://maps.app.goo.gl/ZkLPNBr3fvU4t5FX8">Зоряний бульвар, 1А, Дніпро</a>
-    </p>
-    <p>
-        <label class="headline">Телеграм:</label>
-        @dmytroPysmennyi
-    </p>
+    {% block content %}
+        <h1>Контакти</h1>
+        <p>
+            <label class="headline">Телефон:</label>
+            +380123456789
+        </p>
+        <p>
+            <label class="headline">Адреса: </label>
+            <a href="https://maps.app.goo.gl/ZkLPNBr3fvU4t5FX8">Зоряний бульвар, 1А, Дніпро</a>
+        </p>
+        <p>
+            <label class="headline">Телеграм:</label>
+            @dmytroPysmennyi
+        </p>
+        <style>
+            body{
+                background-color: rgb(117, 139, 202);
+            }
+            h1{
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                font-size: 50px;
+                color: white;
+                -webkit-text-stroke: 2px black;
+            }
+            p{
+                text-align: center;
+                font-size: 40px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+            }
+            .headline{
+                color: white;
+                -webkit-text-stroke: 2px black;
+            }
+        </style>
+        
+    {% endblock content %}
 </body>
 </html>

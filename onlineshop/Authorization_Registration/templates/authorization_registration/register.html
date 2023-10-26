@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'authorization_registration/css/register.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Реєстрація</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div><button type="submit">Submit</button></div>
+        </form>
+    </div>
+    <script>
+        document.querySelector("label").remove()
+        document.querySelector("label").remove()
+        document.querySelector("label").remove()
+        document.querySelector("label").remove()
+        
+        
+    </script>
+</body>
+</html>

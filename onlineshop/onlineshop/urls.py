@@ -19,10 +19,15 @@ from django.urls import path
 from main_page.views import show_main
 from contact_page.views import show_contacts
 from product_page.views import show_products
+from shopping_cart_page.views import show_cart
+from Authorization_Registration.views import show_login, show_registration
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', show_main, name= "main"),
+    path('main/', show_main, name= "main"),
     path('contacts/', show_contacts, name= "contacts"),
-    path('products/', show_products, name= "products")
+    path('products/', show_products, name= "products"),
+    path('shopping_cart/', show_cart, name= "shopping_cart"),
+    path('login/', show_login, name="login"),
+    path('', show_registration, name="registration")
 ]

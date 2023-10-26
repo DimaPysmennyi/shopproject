@@ -1,0 +1,13 @@
+header{
+    background-color: rgb(65, 80, 98);
+    height: 80px;
+    padding-top: 30px;
+    border-radius: 50px;
+    padding-left: 20%;
+}
+header a{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}

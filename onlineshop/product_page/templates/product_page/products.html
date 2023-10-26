@@ -1,3 +1,4 @@
+{% extends 'APP_settings/settings.html' %}
 {% load static %}
 <html lang="en">
     <head>
@@ -7,28 +8,76 @@
         <title>Товари</title>
     </head>
     <body>
-        <h1>Наші товари</h1>
-        <div id="stock">
-            <div class="product">
-                <img src="https://content1.rozetka.com.ua/goods/images/big/364623744.jpg" alt="err1">
-                <p>Apple IPhone 15 128GB Black</p>
+        {% block content %}
+            <h1>Наші товари</h1>
+            <div id="stock">
+                <div class="product">
+                    <img src="https://content1.rozetka.com.ua/goods/images/big/364623744.jpg" alt="err1">
+                    <p>Apple IPhone 15 128GB Black</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.samsung.com/is/image/samsung/p6pim/de/feature/163953138/de-feature--thinsp--531465333?$FB_TYPE_A_MO_JPG$" alt="err1">
+                    <p>Samsung Galaxy M33</p>
+                </div>
+                <div class="product">
+                    <img src="https://content2.rozetka.com.ua/goods/images/big/172266668.jpg" alt="err1">
+                    <p>Навушники JBL TUNE 510 BT Black</p>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71ufHRvvHaL.jpg" alt="err1">
+                    <p>Акустична система JBL Go 3 Black</p>
+                </div>
+                <div class="product">
+                    <img src="https://content2.rozetka.com.ua/goods/images/big/353759856.jpg" alt="err1">
+                    <p>Смарт-годинник Samsung Galaxy Watch 6 40mm Black </p>
+                </div>
             </div>
-            <div class="product">
-                <img src="https://images.samsung.com/is/image/samsung/p6pim/de/feature/163953138/de-feature--thinsp--531465333?$FB_TYPE_A_MO_JPG$" alt="err1">
-                <p>Samsung Galaxy M33</p>
-            </div>
-            <div class="product">
-                <img src="https://content2.rozetka.com.ua/goods/images/big/172266668.jpg" alt="err1">
-                <p>Навушники JBL TUNE 510 BT Black</p>
-            </div>
-            <div class="product">
-                <img src="https://m.media-amazon.com/images/I/71ufHRvvHaL.jpg" alt="err1">
-                <p>Акустична система JBL Go 3 Black</p>
-            </div>
-            <div class="product">
-                <img src="https://content2.rozetka.com.ua/goods/images/big/353759856.jpg" alt="err1">
-                <p>Смарт-годинник Samsung Galaxy Watch 6 40mm Black </p>
-            </div>
-        </div>
+
+            <style>
+/* h1{
+    color: rebeccapurple;
+} */
+
+                h1{
+                    text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: bold;
+                    font-size: 50px;
+                    color: white;
+                    -webkit-text-stroke: 2px black;
+                }
+                p{
+                    text-align: center;
+                    font-size: 32px;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: bold;
+                }
+                .product{
+                    margin: auto; 
+                    border: 2px solid black;
+                    border-top: 2px solid black;
+                    border-bottom: 2px solid black;
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                    width: 325px;
+                    height: 668px;
+                }
+                img{
+                    width: 325px;
+                    height: 450px;
+                    border-bottom: 2px solid black;
+                }
+                #stock{
+                    display: flex;
+                    position: absolute;
+                    left: 30px;
+                    right: 20px;
+                    border: 2px solid black; 
+                }
+                body{
+                    background-color: rgb(117, 139, 202);
+                }
+            </style>
+        {% endblock content %}
     </body>
 </html>

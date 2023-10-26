@@ -1,3 +1,4 @@
+{% extends 'APP_settings/settings.html' %}
 {% load static %}
 <html lang="en">
 <head>
@@ -7,18 +8,47 @@
     <link rel="stylesheet" href="{% static 'main_page/css/style.css' %}">
 </head>
 <body>
-    {% block header %}
+    {% block content %}
+        <h1>
+            Головна сторінка
+        </h1>
+        <p>Це магазин техніки, тут ви можете придбати найкращі гаджети</p>
+
+        <div>
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/de/feature/163953138/de-feature--thinsp--531465333?$FB_TYPE_A_MO_JPG$" alt="">
+            <p>
+                Новинка!
+            </p>
+        </div>
+
+        <style>
+            h1{
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                font-size: 50px;
+                color: white;
+                -webkit-text-stroke: 2px black;
+            }
+            p{
+                text-align: center;
+                font-size: 32px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
+            div{
+                margin: auto;
+                border: 3px solid black;
+                width: 250px;
+            }
+            img{
+                width: 250px;
+                height: 370px;
+            }
+            body{
+                background-color: rgb(117, 139, 202);
+            }
+        </style>
     {% endblock %}
-    <h1>
-        Головна сторінка
-    </h1>
-    <p>Це магазин техніки, тут ви можете придбати найкращі гаджети</p>
-    
-    <div>
-        <img src="https://images.samsung.com/is/image/samsung/p6pim/de/feature/163953138/de-feature--thinsp--531465333?$FB_TYPE_A_MO_JPG$" alt="">
-        <p>
-            Новинка!
-        </p>
-    </div>
 </body>
 </html>
